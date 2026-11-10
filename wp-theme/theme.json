@@ -9,8 +9,12 @@
       "palette": [
         { "slug": "pink", "color": "#E61080", "name": "Brand pink" },
         { "slug": "pink-alt", "color": "#E9008B", "name": "Pink alternate" },
+        { "slug": "pink-on-dark", "color": "#FF3D8D", "name": "Pink on dark" },
+        { "slug": "pink-on-light", "color": "#C40A6C", "name": "Pink on light" },
+        { "slug": "pink-btn", "color": "#C40A6C", "name": "Pink button" },
         { "slug": "cyan", "color": "#00B6F3", "name": "Brand cyan" },
         { "slug": "cyan-alt", "color": "#23BCEE", "name": "Cyan alternate" },
+        { "slug": "cyan-btn", "color": "#006FBF", "name": "Cyan button" },
         { "slug": "wave-purple", "color": "#8D56B7", "name": "Wave purple" },
         { "slug": "wave-magenta", "color": "#C12DA1", "name": "Wave magenta" },
         { "slug": "wave-end", "color": "#EC008D", "name": "Wave end" },
@@ -88,7 +92,7 @@
       },
       "button": {
         "color": {
-          "background": "var(--wp--preset--color--cyan)",
+          "background": "var(--wp--preset--color--cyan-btn)",
           "text": "#ffffff"
         },
         "border": { "radius": "24px" }
