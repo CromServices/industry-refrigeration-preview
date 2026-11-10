@@ -1,0 +1,51 @@
+<?php
+/**
+ * Title: Quote form
+ * Slug: industry-refrigeration/quote-form
+ * Categories: featured
+ */
+?>
+<!-- wp:group {"style":{"color":{"background":"#212121","text":"#ffffff"}}} -->
+<div class="wp-block-group has-text-color has-background" style="color:#ffffff;background-color:#212121">
+  <!-- wp:heading -->
+  <h2 class="wp-block-heading">Request a quote</h2>
+  <!-- /wp:heading -->
+  <!-- wp:paragraph -->
+  <p>Fill in the job and we will come back to you. For emergencies, call 07 4020 8313 or text 0480 800 931. This preview form does not send. They endeavour to reply the next business day.</p>
+  <!-- /wp:paragraph -->
+  <!-- wp:html -->
+  <form class="quote-form" data-preview-form action="#" method="get">
+    <label>Name<input type="text" name="name"></label>
+    <label>Phone<input type="tel" name="phone"></label>
+    <label>Email<input type="email" name="email"></label>
+    <label>Location
+      <select name="location">
+        <option>Cairns</option>
+        <option>Port Douglas</option>
+        <option>Innisfail</option>
+        <option>Tablelands</option>
+        <option>Other</option>
+      </select>
+    </label>
+    <label>Service
+      <select name="service">
+        <option>AC install</option>
+        <option>AC repair</option>
+        <option>AC service</option>
+        <option>Commercial refrigeration</option>
+        <option>Marine</option>
+        <option>Beer systems</option>
+        <option>Ventilation</option>
+        <option>Maintenance</option>
+        <option>Emergency</option>
+      </select>
+    </label>
+    <label>Site type
+      <select name="site"><option>Home</option><option>Business</option><option>Vessel</option></select>
+    </label>
+    <label>Message<textarea name="details"></textarea></label>
+    <button type="submit">Request a quote</button>
+  </form>
+  <!-- /wp:html -->
+</div>
+<!-- /wp:group -->
