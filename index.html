@@ -12,7 +12,50 @@
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
-  <div class="spec-bar"><a href="https://cromservices.com.au">Spec preview by Crom Services</a></div>
+  <div class="chrome">
+    <div class="spec-bar"><a href="https://cromservices.com.au">Spec preview by Crom Services</a></div>
+    <header class="site">
+      <div class="wrap">
+        <a class="brand" href="index.html">
+          <div class="word">Industry<span>Refrigeration · Air-Conditioning</span></div>
+          <svg class="flake" width="56" height="56" viewBox="0 0 64 64" aria-hidden="true">
+            <defs>
+              <linearGradient id="flake-g" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#00B6F3"/>
+                <stop offset="0.45" stop-color="#8D56B7"/>
+                <stop offset="1" stop-color="#E61080"/>
+              </linearGradient>
+            </defs>
+            <g fill="none" stroke="url(#flake-g)" stroke-width="3.2" stroke-linecap="round">
+              <path d="M32 6v52M32 6l-6 8M32 6l6 8M32 58l-6-8M32 58l6-8"/>
+              <path d="M9.4 21.2l45.2 21.6M9.4 21.2l10.2-1.2M9.4 21.2l4.2 9.4M54.6 42.8l-10.2 1.2M54.6 42.8l-4.2-9.4"/>
+              <path d="M54.6 21.2L9.4 42.8M54.6 21.2l-10.2-1.2M54.6 21.2l-4.2 9.4M9.4 42.8l10.2 1.2M9.4 42.8l4.2-9.4"/>
+            </g>
+          </svg>
+        </a>
+        <details class="menu">
+          <summary class="menu-toggle">Menu</summary>
+      <nav class="mobile-nav" aria-label="Site">
+        <a href="services.html">Services</a>
+        <a href="areas.html">Areas</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a class="btn btn-cyan" href="tel:+61417500434">Call 0417 500 434</a>
+        <a class="btn btn-pink" href="#quote">Get a quote</a>
+      </nav>
+        </details>
+      <nav class="primary" aria-label="Primary">
+        <a href="services.html">Services</a>
+        <a href="areas.html">Areas</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a class="btn btn-cyan" href="tel:+61417500434">Call 0417 500 434</a>
+        <a class="btn btn-pink" href="#quote">Get a quote</a>
+      </nav>
+      </div>
+    </header>
+  </div>
+
   <div class="emergency">
     <div class="wrap">24/7 emergency · Call <a href="tel:+61740208313">07 4020 8313</a> · Text <a href="sms:+61480800931">0480 800 931</a></div>
   </div>
@@ -22,43 +65,6 @@
       <span class="chip"><span class="dot" aria-hidden="true"></span><a href="tel:+61740208313">07 4020 8313</a></span>
     </div>
   </div>
-  <header class="site">
-    <div class="wrap">
-      <a class="brand" href="index.html">
-        <div class="word">Industry<span>Refrigeration · Air-Conditioning</span></div>
-        <svg class="flake" width="56" height="56" viewBox="0 0 64 64" aria-hidden="true">
-          <defs>
-            <linearGradient id="flake-g" x1="0" y1="0" x2="1" y2="1">
-              <stop offset="0" stop-color="#00B6F3"/>
-              <stop offset="0.45" stop-color="#8D56B7"/>
-              <stop offset="1" stop-color="#E61080"/>
-            </linearGradient>
-          </defs>
-          <g fill="none" stroke="url(#flake-g)" stroke-width="3.2" stroke-linecap="round">
-            <path d="M32 6v52M32 6l-6 8M32 6l6 8M32 58l-6-8M32 58l6-8"/>
-            <path d="M9.4 21.2l45.2 21.6M9.4 21.2l10.2-1.2M9.4 21.2l4.2 9.4M54.6 42.8l-10.2 1.2M54.6 42.8l-4.2-9.4"/>
-            <path d="M54.6 21.2L9.4 42.8M54.6 21.2l-10.2-1.2M54.6 21.2l-4.2 9.4M9.4 42.8l10.2 1.2M9.4 42.8l4.2-9.4"/>
-          </g>
-        </svg>
-      </a>
-      <nav class="primary" aria-label="Primary">
-        <a href="services.html">Services</a>
-        <a href="areas.html">Areas</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
-        <a class="btn btn-cyan" href="tel:+61417500434">Call 0417 500 434</a>
-        <a class="btn btn-pink" href="#quote">Get a quote</a>
-      </nav>
-    </div>
-  </header>
-  <nav class="nav-compact" aria-label="Pages">
-    <div class="wrap">
-      <a href="services.html">Services</a>
-      <a href="areas.html">Areas</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
-    </div>
-  </nav>
 
   <main id="main">
     <section class="hero">
@@ -122,11 +128,11 @@
         </div>
         <div>
           <form class="quote-form" data-preview-form action="#" method="get">
-            <label for="name">Name<input id="name" type="text" name="name" autocomplete="name"></label>
-            <label for="phone">Phone<input id="phone" type="tel" name="phone" autocomplete="tel"></label>
-            <label for="email">Email<input id="email" type="email" name="email" autocomplete="email"></label>
+            <label for="name">Name<input id="name" type="text" name="name" autocomplete="name" required></label>
+            <label for="phone">Phone<input id="phone" type="tel" name="phone" autocomplete="tel" required></label>
+            <label for="email">Email<input id="email" type="email" name="email" autocomplete="email" required></label>
             <label for="location">Location
-              <select id="location" name="location">
+              <select id="location" name="location" required>
                 <option>Cairns</option>
                 <option>Port Douglas</option>
                 <option>Innisfail</option>
@@ -135,7 +141,7 @@
               </select>
             </label>
             <label for="service">Service
-              <select id="service" name="service">
+              <select id="service" name="service" required>
                 <option>AC install</option>
                 <option>AC repair</option>
                 <option>AC service</option>
@@ -148,15 +154,21 @@
               </select>
             </label>
             <label for="site">Site type
-              <select id="site" name="site"><option>Home</option><option>Business</option><option>Vessel</option></select>
+              <select id="site" name="site" required><option>Home</option><option>Business</option><option>Vessel</option></select>
             </label>
-            <label class="full" for="details">Message<textarea id="details" name="details"></textarea></label>
+            <label class="full" for="details">Message<textarea id="details" name="details" required></textarea></label>
             <p class="form-note">This preview form does not send. They endeavour to reply the next business day.</p>
             <button class="btn btn-cyan submit" type="submit">Request a quote</button>
           </form>
-          <div class="thanks" data-thanks hidden>
-            <h2>Thanks</h2>
-            <p>This preview form does not send. On the live site the quote would go to admin@industryrefrigeration.com.au.</p>
+          <div class="thanks" data-thanks hidden tabindex="-1" role="status" aria-live="polite">
+            <h2>Thanks <span data-thanks-name></span>, your request is in</h2>
+            <p class="thanks-lead">What happens next</p>
+            <ol>
+              <li>We get your request straight away by email and SMS.</li>
+              <li>We call or text you back, usually same business day.</li>
+              <li>You get a written quote, no obligation.</li>
+            </ol>
+            <p class="form-note">Demo only: this preview does not send.</p>
           </div>
         </div>
       </div>

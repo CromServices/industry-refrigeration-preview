@@ -11,15 +11,15 @@
   <h2 class="wp-block-heading">Request a quote</h2>
   <!-- /wp:heading -->
   <!-- wp:paragraph -->
-  <p>Fill in the job and we will come back to you. For emergencies, call 07 4020 8313 or text 0480 800 931. This preview form does not send. They endeavour to reply the next business day.</p>
+  <p>Fill in the job and we will come back to you. For emergencies, call 07 4020 8313 or text 0480 800 931. They endeavour to reply the next business day.</p>
   <!-- /wp:paragraph -->
   <!-- wp:html -->
   <form class="quote-form" data-preview-form action="#" method="get">
-    <label>Name<input type="text" name="name"></label>
-    <label>Phone<input type="tel" name="phone"></label>
-    <label>Email<input type="email" name="email"></label>
+    <label>Name<input type="text" name="name" required></label>
+    <label>Phone<input type="tel" name="phone" required></label>
+    <label>Email<input type="email" name="email" required></label>
     <label>Location
-      <select name="location">
+      <select name="location" required>
         <option>Cairns</option>
         <option>Port Douglas</option>
         <option>Innisfail</option>
@@ -28,7 +28,7 @@
       </select>
     </label>
     <label>Service
-      <select name="service">
+      <select name="service" required>
         <option>AC install</option>
         <option>AC repair</option>
         <option>AC service</option>
@@ -41,11 +41,22 @@
       </select>
     </label>
     <label>Site type
-      <select name="site"><option>Home</option><option>Business</option><option>Vessel</option></select>
+      <select name="site" required><option>Home</option><option>Business</option><option>Vessel</option></select>
     </label>
-    <label>Message<textarea name="details"></textarea></label>
+    <label>Message<textarea name="details" required></textarea></label>
+    <p>This preview form does not send.</p>
     <button type="submit">Request a quote</button>
   </form>
+  <div class="thanks" data-thanks hidden tabindex="-1" role="status" aria-live="polite">
+    <h2>Thanks <span data-thanks-name></span>, your request is in</h2>
+    <p>What happens next</p>
+    <ol>
+      <li>We get your request straight away by email and SMS.</li>
+      <li>We call or text you back, usually same business day.</li>
+      <li>You get a written quote, no obligation.</li>
+    </ol>
+    <p>Demo only: this preview does not send.</p>
+  </div>
   <!-- /wp:html -->
 </div>
 <!-- /wp:group -->
